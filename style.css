@@ -1,0 +1,170 @@
+/* General */
+body {
+    margin:0; padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f5f5f5; color:#333;
+}
+
+/* Header */
+header {
+    background:#001f3f; color:white; display:flex;
+    justify-content:space-between; align-items:center;
+    padding:15px 50px; position:sticky; top:0; z-index:1000;
+}
+header .logo { font-size:26px; font-weight:bold; }
+header nav a {
+    color:white; text-decoration:none; margin-left:25px; font-weight:bold;
+    transition:0.3s;
+}
+header nav a:hover, header nav a.active { border-bottom:2px solid #ffcc00; }
+
+/* Hero Section */
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display:flex; align-items:center; justify-content:center;
+    color:white; text-align:center;
+}
+.hero-overlay {
+    content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.65);
+}
+.hero-content { position:relative; max-width:700px; padding:0 15px; }
+/* Welcome text smaller for one line */
+.hero h1 { 
+    font-size:38px; /* smaller to fit in one line */
+    margin-bottom:15px; 
+    text-shadow:4px 4px 12px #000; 
+}
+.hero h1 span { color:#ffcc00; }
+/* Caption text in one line */
+.hero-text {
+    font-size:20px;
+    margin-bottom:25px;
+    text-shadow:2px 2px 8px #000;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hero .hero-btn {
+    background:linear-gradient(45deg,#ffcc00,#ff6600);
+    color:white; padding:18px 50px;
+    text-decoration:none; font-size:20px;
+    border-radius:12px; font-weight:bold;
+    transition:0.3s; box-shadow:0 8px 25px rgba(0,0,0,0.4);
+}
+.hero .hero-btn:hover { background:linear-gradient(45deg,#ff6600,#ffcc00); transform:scale(1.05); }
+
+/* Featured Shows Section */
+.shows { padding:50px 20px; text-align:center; }
+.shows h2 { font-size:36px; margin-bottom:40px; }
+.show-container { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+.show-card {
+    background:white; width:250px; border-radius:12px;
+    box-shadow:0 8px 15px rgba(0,0,0,0.2); overflow:hidden;
+    transition:0.3s; text-align:center;
+}
+.show-card:hover { transform:translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.3); }
+.show-card img { width:100%; height:150px; object-fit:cover; }
+.show-card h3 { margin:10px 0; font-size:20px; }
+.show-card p { font-size:14px; color:#555; padding:0 10px; }
+
+/* Customer Review Section */
+.customer-review { background:#f0f0f0; padding:50px 20px; text-align:center; }
+.customer-review h2 { font-size:36px; margin-bottom:30px; color:#001f3f; }
+.review-box {
+    max-width:600px; margin:20px auto;
+    background:white; padding:25px; border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    font-size:18px; color:#333; font-style:italic;
+}
+.review-box span { display:block; margin-top:15px; font-weight:bold; color:#ff6600; }
+
+/* Footer */
+footer { background:#001f3f; color:white; text-align:center; padding:25px; margin-top:50px; }
+
+/* Login & Register Page Styles */
+.form-body {
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url('images/magic-show.jpg') no-repeat center center/cover;
+    position:relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-body::before {
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0; bottom:0; /* cover full screen */
+    background: rgba(0,0,0,0.25); /* subtle overlay for readability */
+    z-index:0;
+}
+.form-card {
+    position:relative;
+    z-index:1;
+    background:white;
+    padding:40px 30px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+    width:400px;
+    max-width:90%;
+    text-align:center;
+}
+.form-card h2 {
+    color:#001f3f;
+    font-size:28px;
+    margin-bottom:25px;
+    font-weight:bold;
+}
+.input-group {
+    margin-bottom:15px;
+}
+.input-group input {
+    width:100%;
+    box-sizing:border-box;
+    padding:15px 20px;
+    font-size:16px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    outline:none;
+    transition:0.3s;
+}
+.input-group input:focus {
+    border-color:#ff6600;
+    box-shadow:0 0 10px rgba(255,102,0,0.5);
+}
+.form-card button {
+    width:100%;
+    padding:15px;
+    background:linear-gradient(45deg,#ffcc00,#ff6600);
+    border:none;
+    border-radius:12px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+.form-card button:hover {
+    background:linear-gradient(45deg,#ff6600,#ffcc00);
+    transform:scale(1.05);
+}
+.signup-link {
+    margin-top:15px;
+    font-size:14px;
+}
+.signup-link a {
+    color:#ff6600;
+    text-decoration:none;
+    font-weight:bold;
+}
+.error {
+    color:red;
+    margin-bottom:15px;
+    font-weight:bold;
+}
