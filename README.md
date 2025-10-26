@@ -72,7 +72,6 @@ $pass = "4x(tomIoBUhV";
 $dbname = "circus_booking";
 
 Access the Live Site
-
 Live Site on AWS EC2
 
 git clone https://github.com/YourUsername/circus_booking.git
