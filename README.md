@@ -43,7 +43,7 @@ $host = "localhost";
 $user = "root";
 $pass = ""; // blank for local XAMPP
 $dbname = "circus_booking";
-Run the site in browser: http://localhost/circus_booking/
+Run the site in browser: http://13.235.33.182/
 
 3. AWS EC2 Deployment
 
